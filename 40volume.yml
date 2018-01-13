@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: data-kafka
+  name: data
   namespace: kafka
   labels:
     type: local

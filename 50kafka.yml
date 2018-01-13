@@ -63,10 +63,10 @@ spec:
           name: broker-config
   volumeClaimTemplates:
   - metadata:
-      name: data-kafka
+      name: data
     spec:
       storageClassName: generic
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 0.1Gi
+          storage: 100M
