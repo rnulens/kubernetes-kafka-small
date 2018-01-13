@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: data
+  name: zookeeper-data
   namespace: kafka
   labels:
     type: local

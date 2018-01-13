@@ -63,7 +63,7 @@ spec:
           name: broker-config
   volumeClaimTemplates:
   - metadata:
-      name: data
+      name: kafka-data
     spec:
       storageClassName: generic
       accessModes: [ "ReadWriteOnce" ]

@@ -60,10 +60,10 @@ spec:
           name: zookeeper-config
   volumeClaimTemplates:
   - metadata:
-      name: data
+      name: zookeeper-data
     spec:
       storageClassName: generic
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 10M
+          storage: 100M
