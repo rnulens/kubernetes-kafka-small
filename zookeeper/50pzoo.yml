@@ -60,7 +60,7 @@ spec:
           name: zookeeper-config
   volumeClaimTemplates:
   - metadata:
-      name: zookeeper-data
+      name: data
     spec:
       storageClassName: generic
       accessModes: [ "ReadWriteOnce" ]
