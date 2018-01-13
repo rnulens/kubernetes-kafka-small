@@ -62,6 +62,7 @@ spec:
   - metadata:
       name: data
     spec:
+      storageClassName: generic
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
