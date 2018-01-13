@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: data
+  name: data-kafka
   namespace: kafka
   labels:
     type: local
@@ -12,6 +12,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/data/zookeeper"
+    path: "/data/kafka"
 # for 05pzoo we seem to need a separate persistent volume definition 
 # see: https://apassionatechie.wordpress.com/tag/persistentvolumeclaim-is-not-bound/
